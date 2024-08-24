@@ -3,6 +3,7 @@ import Card from "@/components/Card";
 import {contrariansTraits} from "@/mocks/contrariansTraits";
 import Image from "@/components/Image";
 import React from "react";
+import {notificationsAll} from "@/mocks/notifications";
 
 type ContrarianContentProps = {
     data: { [key: string]: any }; // An object with keys of type string and values of any type
@@ -28,6 +29,7 @@ const getRandomItems = (arr: Trait[], numItems: number): Trait[] => {
 
 const ContrarianContent = ({data}: ContrarianContentProps) => {
     const imageId = data?.image?.split('ipfs://').pop();
+    const name = data?.name;
     const attributes = data?.attributes?.filter((i: Attribute) => i.value !== "None");
     const randomAttributes = getRandomItems(attributes, 3);
     const traits = contrariansTraits?.filter(trait =>
@@ -36,24 +38,32 @@ const ContrarianContent = ({data}: ContrarianContentProps) => {
         )
     );
     return (
-        <Card
-            className="flex-1"
-            // title="ContrarianContent"
-            // seeAllUrl="/"
-        >
-            <div className="flex space-x-2 lg:block lg:space-x-0 lg:space-y-2">
-                Test
+        <div className="flex flex-row lg:flex-row lg:space-x-2 lg:space-y-0 space-y-6 m-24">
+            {/* Text Content */}
+            <div className="flex-1 w-full px-30 py-15 lg:w-1/2 mt-5 lg:mt-0 lg:ml-10 md:space-y-6">
+                {traits.map((item) => (
+                    <div key={item.Trait}>
+                        <div className="mb-2 text-title-1s">{item.Trait}</div>
+                        <div className="mb-8 text-title-1m text-theme-secondary 2xl:mb-10">
+                            {item.Description}
+                        </div>
+                    </div>
+                ))}
             </div>
-            <div className="flex justify-end mb-6 mr-10 p-6 text-center md:py-0">
+
+            {/* Image Content */}
+            <div className="flex-shrink-0 w-1/2 lg:w-1/2 py-10 px-20 justify-end lg:py-0">
                 <Image
                     className="max-w-full opacity-100 rounded-[1.5rem] object-cover"
                     src={`https://ipfs-wrapper.dagora.xyz/ipfs/${imageId}?width=500&height=500`}
-                    width={500}
-                    height={500}
+                    width={420}
+                    height={420}
                     alt=""
                 />
+                <div className="mb-10 mt-5 text-2xl text-center font-bold">{name}</div>
             </div>
-        </Card>
+        </div>
+
     );
 };
 
