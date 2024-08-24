@@ -3,6 +3,7 @@ import Card from "@/components/Card";
 import {contrariansTraits} from "@/mocks/contrariansTraits";
 import Image from "@/components/Image";
 import React from "react";
+import GradientText from "@/components/GradientText";
 import {notificationsAll} from "@/mocks/notifications";
 
 type ContrarianContentProps = {
@@ -43,7 +44,8 @@ const ContrarianContent = ({data}: ContrarianContentProps) => {
             <div className="flex-1 w-full px-30 py-15 lg:w-1/2 mt-5 lg:mt-0 lg:ml-10 md:space-y-6">
                 {traits.map((item) => (
                     <div key={item.Trait}>
-                        <div className="mb-5 text-title-1s">{item.Description}</div>
+                        {/*<div className="mb-5 text-title-1s">{item.Description}</div>*/}
+                        <GradientText text={item?.Description} />
                         {/*<div className="mb-8 text-title-1m text-theme-secondary 2xl:mb-10">*/}
                         {/*    {item.Description}*/}
                         {/*</div>*/}
