@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Balance from "./Balance";
 import Message from "@/components/Message";
 import {useState} from "react";
+import Gallery from "@/templates/HomePage/Gallery";
 
 const HomePage = () => {
     const router = useRouter();
@@ -17,7 +18,8 @@ const HomePage = () => {
     return (
         <Layout title="Dashboard">
             <div className="space-y-2">
-                <Balance />
+                {/*<Balance />*/}
+                <Gallery />
             </div>
             <div>
                 <Message
@@ -27,7 +29,7 @@ const HomePage = () => {
                     onAction={onViewContrarian}
                 />
             </div>
-            <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
+            <div className="fixed bottom-0 text-base-1s left-1/2 transform -translate-x-1/2 mb-4">
                 Sponsor Information
             </div>
         </Layout>

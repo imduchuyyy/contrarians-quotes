@@ -36,7 +36,7 @@ const Sending = ({ onConfirm, onClose }: SendingProps) => (
             </Option>
             <Option
                 classTitle="!w-30"
-                title="Neutrade fee"
+                title="Contrarians Quotes fee"
                 color="bg-theme-purple"
             >
                 US$0.00

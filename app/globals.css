@@ -107,4 +107,69 @@
     .react-codes-custom .react-codes-input__entered-value span {
         @apply !text-theme-tertiary;
     }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .animate-slide-in-left {
+        animation: slideInLeft 1s ease-out;
+    }
+
+    .animate-slide-in-right {
+        animation: slideInRight 1s ease-out;
+    }
+
+    /* styles/animations.css */
+
+    @keyframes scrollLeft {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes scrollRight {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    .animate-scroll-left {
+        display: flex;
+        animation: scrollLeft 25s linear infinite;
+    }
+
+    .animate-scroll-right {
+        display: flex;
+        animation: scrollRight 25s linear infinite;
+    }
+
+    .image {
+        width: 200px;
+        height: 200px;
+    }
 }

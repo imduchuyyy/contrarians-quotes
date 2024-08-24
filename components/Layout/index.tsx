@@ -35,9 +35,9 @@ const Layout = ({ title, children }: LayoutProps) => {
                     onClickBurger={() => setShowMenu(!showMenu)}
                     showMenu={showMenu}
                 />
-                <div className="mx-auto pt-24 px-10 pb-10 lg:px-6 md:pt-20 md:px-4 md:pb-8">
+                <div className="mx-auto pt-24 pb-10 lg:px-6 md:pt-20 md:px-4 md:pb-8">
                     {title && (
-                        <div className="hidden md:flex items-center h-16 mb-2 px-4 bg-theme-on-surface-1 rounded-2xl text-h5">
+                        <div className="hidden md:flex items-center h-16 mb-2 bg-theme-on-surface-1 rounded-2xl text-h5">
                             {title}
                         </div>
                     )}

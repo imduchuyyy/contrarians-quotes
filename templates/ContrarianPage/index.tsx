@@ -15,8 +15,10 @@ const ContrarianPage: React.FC<ContrarianPageProps> = ({ params: { contrarian },
     return (
         <Layout title={'Test'}>
             <div className="space-y-2">
-                <div className="mb-10 text-h2 text-center font-bold">Contrarians Quotes</div>
                 <ContrarianContent data={data} />
+            </div>
+            <div className="fixed bottom-0 text-base-1s left-1/2 transform -translate-x-1/2 mb-4">
+                Sponsor Information
             </div>
         </Layout>
     );

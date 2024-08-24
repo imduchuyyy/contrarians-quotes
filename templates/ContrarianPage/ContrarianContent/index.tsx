@@ -38,15 +38,15 @@ const ContrarianContent = ({data}: ContrarianContentProps) => {
         )
     );
     return (
-        <div className="flex flex-row lg:flex-row lg:space-x-2 lg:space-y-0 space-y-6 m-24">
+        <div className="flex flex-row lg:flex-row lg:space-x-2 lg:space-y-0 space-y-3 m-18">
             {/* Text Content */}
             <div className="flex-1 w-full px-30 py-15 lg:w-1/2 mt-5 lg:mt-0 lg:ml-10 md:space-y-6">
                 {traits.map((item) => (
                     <div key={item.Trait}>
-                        <div className="mb-2 text-title-1s">{item.Trait}</div>
-                        <div className="mb-8 text-title-1m text-theme-secondary 2xl:mb-10">
-                            {item.Description}
-                        </div>
+                        <div className="mb-5 text-title-1s">{item.Description}</div>
+                        {/*<div className="mb-8 text-title-1m text-theme-secondary 2xl:mb-10">*/}
+                        {/*    {item.Description}*/}
+                        {/*</div>*/}
                     </div>
                 ))}
             </div>
@@ -63,6 +63,7 @@ const ContrarianContent = ({data}: ContrarianContentProps) => {
                 <div className="mb-10 mt-5 text-2xl text-center font-bold">{name}</div>
             </div>
         </div>
+
 
     );
 };

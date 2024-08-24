@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useColorMode } from "@chakra-ui/react";
 import Modal from "@/components/Modal";
@@ -38,7 +38,7 @@ const Header = ({ title, visible, showMenu, onClickBurger }: HeaderProps) => {
                     }`}
                 >
                     <div className="flex-1">
-                        {/* Other content can go here if needed */}
+                        <div className="mt-6 mb-5 text-h2 text-center font-bold">Contrarians Quotes</div>
                     </div>
                     <button className="mt-6 group flex items-center h-12 px-4 rounded-xl transition-colors hover:bg-theme-on-surface-2 md:hover:bg-transparent" onClick={toggleColorMode}>
                         <Icon
