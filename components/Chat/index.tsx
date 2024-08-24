@@ -58,13 +58,13 @@ const Chat = ({ children }: ChatProps) => {
                         <NewChat />
                     )}
                 </div>
-                <Message
+                {/* <Message
                     className="shrink-0 mt-6 md:mt-4"
-                    value={message}
+                    value={parseInt(message) ? message : 0}
                     onChange={(e: any) => setMessage(e.target.value)}
                     autoFocus
                     logo
-                />
+                /> */}
             </div>
             <History visible={visible} onClose={() => setVisible(false)} />
         </div>

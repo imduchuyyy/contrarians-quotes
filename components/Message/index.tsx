@@ -7,7 +7,7 @@ import Image from "@/components/Image";
 
 interface MessageProps {
     className?: string;
-    value: number;
+    value: any;
     onChange: ChangeEventHandler<HTMLTextAreaElement>;
     placeholder?: string;
     logo?: boolean;
