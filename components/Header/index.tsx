@@ -24,23 +24,19 @@ const Header = ({ title, visible, showMenu, onClickBurger }: HeaderProps) => {
     return (
         <>
             <div
-                className={`fixed top-0 right-0 z-10 bg-theme-n-8 md:z-30 md:px-4 md:py-2 md:transition-colors ${
-                    visible
-                        ? "left-0 2xl:left-76 xl:left-20 md:left-0"
-                        : "left-20 md:left-0"
-                } ${showMenu ? "md:!bg-theme-on-surface-1" : ""}`}
+                className={`fixed top-0 right-0 z-10 bg-theme-n-8 md:z-30 md:transition-colors left-0 sm:left-10 md:left-5 ${showMenu ? "md:!bg-theme-on-surface-1" : ""}`}
             >
                 <div
-                    className={`flex justify-between h-24 w-full mx-auto px-10 lg:px-6 md:h-16 md:px-4 md:bg-theme-on-surface-1 md:rounded-2xl md:transition-shadow ${
+                    className={`flex justify-between h-24 w-full mx-auto px-10 lg:px-6 md:h-16 md:px-4 md:rounded-2xl md:transition-shadow ${
                         showMenu
                             ? "shadow-depth-1 dark:shadow-[inset_0_0_0_0.125rem_#272B30]"
                             : ""
                     }`}
                 >
                     <div className="flex-1">
-                        <div className="mt-6 mb-5 text-h2 text-center font-bold">Contrarians Quotes</div>
+                        <div className="mt-6 mb-5 text-h3 md:text-h4 sm:text-h5 text-center font-bold">Contrarians Quotes</div>
                     </div>
-                    <button className="mt-6 group flex items-center h-12 px-4 rounded-xl transition-colors hover:bg-theme-on-surface-2 md:hover:bg-transparent" onClick={toggleColorMode}>
+                    <button className="mt-6 sm:mt-4 group flex items-center h-12 px-4 rounded-xl transition-colors hover:bg-theme-on-surface-2 md:hover:bg-transparent" onClick={toggleColorMode}>
                         <Icon
                             className="shrink-0 fill-theme-secondary transition-colors group-hover:fill-theme-primary md:group-hover:fill-theme-secondary"
                             name={isLightMode ? "moon" : "sun"}

@@ -32,6 +32,8 @@
         --purple: #b981da;
         --yellow: #fba94b;
         --brand: #0c68e9;
+        --green-brand: #87cf7e;
+        --luxury-brand: #cda439;
     }
 
     :root[data-theme="dark"] {
@@ -58,6 +60,8 @@
         --purple-300: #a375c3;
         --yellow-50: #82776b;
         --dune: #272c30;
+        --green-brand: #87cf7e;
+        --luxury-brand: #cda439;
     }
 }
 
@@ -104,6 +108,12 @@
     .card-color:nth-child(3n + 3) .card-icon-color {
         @apply bg-theme-green;
     }
+    /*.card-color:nth-child(3n + 3) .card-icon-color {*/
+    /*    @apply bg-theme-green-brand;*/
+    /*}*/
+    /*.card-color:nth-child(3n + 3) .card-icon-color {*/
+    /*    @apply bg-theme-green-brand;*/
+    /*}*/
     .react-codes-custom .react-codes-input__entered-value span {
         @apply !text-theme-tertiary;
     }

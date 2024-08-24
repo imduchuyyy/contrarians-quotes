@@ -36,9 +36,9 @@ const Message: React.FC<MessageProps> = ({
 
     return (
         <div
-            className={`flex items-center p-1 pl-4 min-h-[3rem] bg-theme-n-8 rounded-3xl transition-all hover:shadow-[inset_0_0_0_0.0625rem_#EFEFEF] hover:bg-theme-on-surface-1 dark:hover:shadow-[inset_0_0_0_0.0625rem_#272B30] md:pl-3 ${
+            className={`flex items-center p-1 pl-4 min-h-[3rem] border-theme-luxury-brand bg-theme-luxury-brand rounded-3xl transition-all hover:shadow-[inset_0_0_0_0.0625rem_#EFEFEF] dark:hover:shadow-[inset_0_0_0_0.0625rem_#272B30] md:pl-3 ${
                 value !== 0
-                    ? "!shadow-[inset_0_0_0_0.0625rem_#0C68E9] !bg-theme-on-surface-1"
+                    ? "!shadow-[inset_0_0_0_0.0625rem_#cda439] !bg-theme-on-surface-1"
                     : ""
             } ${className}`}
         >
@@ -67,7 +67,7 @@ const Message: React.FC<MessageProps> = ({
                 placeholder={placeholder}
             />
             <button
-                className="shrink-0 w-10 h-10 ml-6 rounded-full bg-theme-brand transition-colors hover:bg-primary-1/90 md:ml-3"
+                className="shrink-0 w-10 h-10 ml-6 rounded-full bg-theme-luxury-brand border-2 transition-colors hover:bg-primary-1/90 hover:border-primary-1 md:ml-3"
                 onClick={onAction}
                 aria-label="Send"
             >

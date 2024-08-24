@@ -55,6 +55,8 @@ const config: Config = {
                 "theme-purple": 'var(--purple)',
                 "theme-yellow": 'var(--yellow)',
                 "theme-brand": 'var(--brand)',
+                "theme-green-brand": 'var(--green-brand)',
+                "theme-luxury-brand": 'var(--luxury-brand)',
                 n: {
                     0: "#FFFFFF",
                     1: "#FCFCFC",
