@@ -1,38 +1,46 @@
-import { ChangeEventHandler } from "react";
+// components/Message.tsx
+import { ChangeEventHandler, KeyboardEvent } from "react";
 import { useColorMode } from "@chakra-ui/color-mode";
 import TextareaAutosize from "react-textarea-autosize";
 import Icon from "@/components/Icon";
 import Image from "@/components/Image";
 
-type MessageProps = {
+interface MessageProps {
     className?: string;
-    value: any;
+    value: number;
     onChange: ChangeEventHandler<HTMLTextAreaElement>;
     placeholder?: string;
     logo?: boolean;
     autoFocus?: boolean;
     onAction?: () => void;
-};
+}
 
-const Message = ({
-    className,
-    value,
-    onChange,
-    placeholder,
-    logo,
-    autoFocus,
-    onAction
-}: MessageProps) => {
-    const { colorMode, setColorMode } = useColorMode();
+const Message: React.FC<MessageProps> = ({
+                                             className = "",
+                                             value,
+                                             onChange,
+                                             placeholder = "Enter ID Here",
+                                             logo,
+                                             autoFocus,
+                                             onAction
+                                         }) => {
+    const { colorMode } = useColorMode();
     const isDarkMode = colorMode === "dark";
+
+    const handleKeyDown = (event: KeyboardEvent<HTMLTextAreaElement>) => {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Prevent default Enter key behavior (like adding a new line)
+            onAction?.(); // Call onAction if it's provided
+        }
+    };
 
     return (
         <div
             className={`flex items-center p-1 pl-4 min-h-[3rem] bg-theme-n-8 rounded-3xl transition-all hover:shadow-[inset_0_0_0_0.0625rem_#EFEFEF] hover:bg-theme-on-surface-1 dark:hover:shadow-[inset_0_0_0_0.0625rem_#272B30] md:pl-3 ${
-                value !== ""
+                value !== 0
                     ? "!shadow-[inset_0_0_0_0.0625rem_#0C68E9] !bg-theme-on-surface-1"
                     : ""
-            } ${className || ""}`}
+            } ${className}`}
         >
             {logo && (
                 <div className="shrink-0 mr-4 md:mr-3">
@@ -45,7 +53,7 @@ const Message = ({
                         }
                         width={24}
                         height={24}
-                        alt=""
+                        alt="Message Logo"
                     />
                 </div>
             )}
@@ -55,9 +63,14 @@ const Message = ({
                 autoFocus={autoFocus}
                 value={value}
                 onChange={onChange}
-                placeholder={placeholder || "Enter ID Here"}
+                onKeyDown={handleKeyDown}
+                placeholder={placeholder}
             />
-            <button className="shrink-0 w-10 h-10 ml-6 rounded-full bg-theme-brand transition-colors hover:bg-primary-1/90 md:ml-3" onClick={onAction}>
+            <button
+                className="shrink-0 w-10 h-10 ml-6 rounded-full bg-theme-brand transition-colors hover:bg-primary-1/90 md:ml-3"
+                onClick={onAction}
+                aria-label="Send"
+            >
                 <Icon className="fill-theme-white-fixed" name="arrow-right" />
             </button>
         </div>

@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78e85e49-a707-4f73-873f-0e1a57a7e18b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/ImageGallery/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/contrarian_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/contrarian_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/contrarian_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/contrarian_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/contrarian_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/contrarian_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/contrarian_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/contrarian_7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/contrarian_8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/contrarian_9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/HomePage/Gallery/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SendAndReceive/Sending/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SendAndReceive/Sending/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Sidebar/UpgradeToPro/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Sidebar/UpgradeToPro/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/navigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/constants/navigation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ContrarianPage/ContrarianContent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ContrarianPage/ContrarianContent/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ContrarianPage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ContrarianPage/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Message/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Message/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/HomePage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/templates/HomePage/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/SettingsPage/Notifications/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/templates/SettingsPage/Notifications/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +64,7 @@
       <workItem from="1721709961269" duration="1168000" />
       <workItem from="1721719677234" duration="44000" />
       <workItem from="1722951845015" duration="59000" />
-      <workItem from="1724466009777" duration="12702000" />
+      <workItem from="1724466009777" duration="13080000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <option name="closed" value="true" />
@@ -111,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724474811722</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix bug">
+      <option name="closed" value="true" />
+      <created>1724478842466</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724478842466</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +108,7 @@
     <MESSAGE value="first init" />
     <MESSAGE value="add UI" />
     <MESSAGE value="contrarian page" />
-    <option name="LAST_COMMIT_MESSAGE" value="contrarian page" />
+    <MESSAGE value="fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
   </component>
 </project>

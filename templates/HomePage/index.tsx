@@ -4,28 +4,30 @@ import Layout from "@/components/Layout";
 import { useRouter } from "next/navigation";
 import Balance from "./Balance";
 import Message from "@/components/Message";
-import {useState} from "react";
+import { useState } from "react";
 import Gallery from "@/templates/HomePage/Gallery";
 
 const HomePage = () => {
     const router = useRouter();
-    const [message, setMessage] = useState("");
+    const [message, setMessage] = useState<number | null>(null);
 
     const onViewContrarian = () => {
-        router.push(`/contrarian/${message}`);
+        if (message !== null) {
+            router.push(`/contrarian/${message}`);
+        }
     };
 
     return (
         <Layout title="Dashboard">
             <div className="space-y-2">
-                {/*<Balance />*/}
+                {/* <Balance /> */}
                 <Gallery />
             </div>
             <div>
                 <Message
                     className="flex items-center w-1/3 mt-10 btn-primary mx-auto text-center"
-                    value={message}
-                    onChange={(e: any) => setMessage(e.target.value)}
+                    value={message === null ? "" : message.toString()} // Convert number to string for the value prop
+                    onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setMessage(Number(e.target.value) || null)} // Convert input to number or set null
                     onAction={onViewContrarian}
                 />
             </div>
