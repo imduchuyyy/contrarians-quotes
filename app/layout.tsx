@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Noto_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import { Providers } from "./providers";
 import "./globals.css";
 
-const inter = Inter({
+const inter = Noto_Sans({
     weight: ["400", "500", "600", "700"],
     subsets: ["latin"],
     display: "block",

@@ -15,7 +15,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
     const secondRow = images.slice(12, 24);
 
     return (
-        <div className="space-y-1 overflow-hidden">
+        <div className=" overflow-hidden">
             {/* First row: left to right with continuous scroll */}
             <div className="flex animate-scroll-left">
                 {firstRow.map((src, index) => (

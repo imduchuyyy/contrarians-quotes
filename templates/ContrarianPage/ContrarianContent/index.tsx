@@ -52,7 +52,7 @@ const ContrarianContent = ({data}: ContrarianContentProps) => {
             </div>
 
             {/* Image Content */}
-            <div className="flex-shrink-0 w-1/2 lg:w-1/2 py-10 px-20 justify-end lg:py-0">
+            <div className="flex-shrink-0 w-1/2 lg:w-1/2 py-10 px-20 flex flex-col items-center justify-end lg:py-0 relative">
                 <Image
                     className="max-w-full opacity-100 rounded-[1.5rem] object-cover"
                     src={`https://ipfs-wrapper.dagora.xyz/ipfs/${imageId}?width=500&height=500`}
@@ -60,7 +60,9 @@ const ContrarianContent = ({data}: ContrarianContentProps) => {
                     height={420}
                     alt=""
                 />
-                <div className="mb-10 mt-5 text-2xl text-center font-bold">{name}</div>
+                <div className=" text-2xl text-center font-bold bg-opacity-70 p-2 rounded-md">
+                    {name}
+                </div>
             </div>
         </div>
 
