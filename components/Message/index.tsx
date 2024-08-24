@@ -11,6 +11,7 @@ type MessageProps = {
     placeholder?: string;
     logo?: boolean;
     autoFocus?: boolean;
+    onAction?: () => void;
 };
 
 const Message = ({
@@ -20,6 +21,7 @@ const Message = ({
     placeholder,
     logo,
     autoFocus,
+    onAction
 }: MessageProps) => {
     const { colorMode, setColorMode } = useColorMode();
     const isDarkMode = colorMode === "dark";
@@ -53,9 +55,9 @@ const Message = ({
                 autoFocus={autoFocus}
                 value={value}
                 onChange={onChange}
-                placeholder={placeholder || "Ask NeuraAI anything"}
+                placeholder={placeholder || "Enter ID Here"}
             />
-            <button className="shrink-0 w-10 h-10 ml-6 rounded-full bg-theme-brand transition-colors hover:bg-primary-1/90 md:ml-3">
+            <button className="shrink-0 w-10 h-10 ml-6 rounded-full bg-theme-brand transition-colors hover:bg-primary-1/90 md:ml-3" onClick={onAction}>
                 <Icon className="fill-theme-white-fixed" name="arrow-right" />
             </button>
         </div>

@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images: {
+        domains: ['ipfs-wrapper.dagora.xyz'],
+    },
+};
 
 export default nextConfig;

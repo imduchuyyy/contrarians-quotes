@@ -9,6 +9,7 @@ import User from "@/components/User";
 import Image from "@/components/Image";
 import Notifications from "./Notifications";
 import Search from "./Search";
+import Switch from "@/components/Switch";
 
 type HeaderProps = {
     title: string;
@@ -22,7 +23,8 @@ const Header = ({ title, visible, showMenu, onClickBurger }: HeaderProps) => {
     const [visibleModalSearch, setVisibleModalSearch] =
         useState<boolean>(false);
     const [visibleModalTrade, setVisibleModalTrade] = useState<boolean>(false);
-    const { colorMode } = useColorMode();
+    const { colorMode, toggleColorMode } = useColorMode();
+    const isLightMode = colorMode === "light";
     return (
         <>
             <div
@@ -39,65 +41,13 @@ const Header = ({ title, visible, showMenu, onClickBurger }: HeaderProps) => {
                             : ""
                     }`}
                 >
-                    <Link className="hidden md:block mr-auto" href="/">
-                        <Image
-                            className="w-9 opacity-100"
-                            src={
-                                colorMode === "light"
-                                    ? "/images/logo-dark.svg"
-                                    : "/images/logo-light.svg"
-                            }
-                            width={36}
-                            height={36}
-                            alt=""
-                        />
-                    </Link>
-                    <button
-                        className="group inline-flex items-center mr-auto text-h5 md:hidden"
-                        onClick={() => router.back()}
-                    >
-                        <div className="flex justify-center items-center w-10 h-10 mr-3.5 lg:mr-1">
-                            <Icon
-                                className="fill-theme-primary transition-transform group-hover:-translate-x-0.5"
-                                name="arrow-left"
-                            />
-                        </div>
-                        {title}
-                    </button>
                     <div className="flex items-center ml-auto space-x-6">
-                        <button
-                            className="btn-primary md:hidden"
-                            onClick={() => setVisibleModalTrade(true)}
-                        >
-                            Buy & Sell
-                        </button>
-                        <button
-                            className="group w-12 h-12 outline-none md:w-8 md:h-8"
-                            onClick={() => setVisibleModalSearch(true)}
-                        >
+                        <button className="group flex items-center h-12 px-4 rounded-xl transition-colors hover:bg-theme-on-surface-2 md:hover:bg-transparent" onClick={toggleColorMode}>
                             <Icon
-                                className="fill-theme-secondary transition-colors group-hover:fill-theme-primary"
-                                name="search"
+                                className="shrink-0 fill-theme-secondary transition-colors group-hover:fill-theme-primary md:group-hover:fill-theme-secondary"
+                                name={isLightMode ? "moon" : "sun"}
                             />
                         </button>
-                        <Notifications />
-                        <button
-                            className={`hidden rounded-full transition-shadow md:block ${
-                                showMenu
-                                    ? "shadow-[0_0_0_0.125rem_#0C68E9]"
-                                    : ""
-                            }`}
-                            onClick={onClickBurger}
-                        >
-                            <Image
-                                className="w-8 h-8 object-cover rounded-full opacity-100"
-                                src="/images/avatar.jpg"
-                                width={32}
-                                height={32}
-                                alt=""
-                            />
-                        </button>
-                        <User className="md:hidden" />
                     </div>
                 </div>
             </div>
