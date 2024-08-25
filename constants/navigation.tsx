@@ -25,7 +25,7 @@ export const navigation = [
     },
     {
         id: "4",
-        title: "Contrarians Quotes AI",
+        title: "Your Contrarian types",
         icon: "star-plus",
         url: "/chat",
     },

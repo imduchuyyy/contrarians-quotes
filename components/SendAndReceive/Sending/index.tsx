@@ -36,7 +36,7 @@ const Sending = ({ onConfirm, onClose }: SendingProps) => (
             </Option>
             <Option
                 classTitle="!w-30"
-                title="Contrarians Quotes fee"
+                title="Your Contrarian types fee"
                 color="bg-theme-purple"
             >
                 US$0.00

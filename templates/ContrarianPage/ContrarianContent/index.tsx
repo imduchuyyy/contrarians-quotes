@@ -47,6 +47,8 @@ const ContrarianContent = ({ data }: ContrarianContentProps) => {
         )
     );
 
+    console.log(`mienpv :: ${JSON.stringify(randomAttributes)}`);
+
     return (
         <div className="flex sm:flex-col-reverse flex-row lg:space-x-2 lg:space-y-0 space-y-3 py-20">
             {/* Text Content */}
