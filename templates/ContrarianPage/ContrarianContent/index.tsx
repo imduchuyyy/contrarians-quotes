@@ -4,6 +4,7 @@ import { contrariansTraits } from "@/mocks/contrariansTraits";
 import Image from "@/components/Image";
 import React from "react";
 import GradientText from "@/components/GradientText";
+import ShareButton from "@/components/ShareButton";
 import { notificationsAll } from "@/mocks/notifications";
 import {useColorMode} from "@chakra-ui/color-mode";
 
@@ -73,6 +74,7 @@ const ContrarianContent = ({ data }: ContrarianContentProps) => {
                 <div className="text-2xl text-center font-bold bg-opacity-70 p-2 rounded-md">
                     {name}
                 </div>
+                <ShareButton />
             </div>
         </div>
     );
