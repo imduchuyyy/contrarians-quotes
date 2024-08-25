@@ -7,8 +7,6 @@
     <list default="true" id="78e85e49-a707-4f73-873f-0e1a57a7e18b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/GradientText/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GradientText/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ContrarianPage/ContrarianContent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ContrarianPage/ContrarianContent/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724562106859</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix bug">
+      <option name="closed" value="true" />
+      <created>1724562888912</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724562888912</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,9 +160,9 @@
     <MESSAGE value="first init" />
     <MESSAGE value="add UI" />
     <MESSAGE value="contrarian page" />
-    <MESSAGE value="fix bug" />
     <MESSAGE value="fix UI" />
     <MESSAGE value="fix responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix responsive" />
+    <MESSAGE value="fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
   </component>
 </project>
