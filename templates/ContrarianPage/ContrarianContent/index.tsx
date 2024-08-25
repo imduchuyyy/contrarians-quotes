@@ -5,6 +5,7 @@ import Image from "@/components/Image";
 import React from "react";
 import GradientText from "@/components/GradientText";
 import { notificationsAll } from "@/mocks/notifications";
+import {useColorMode} from "@chakra-ui/color-mode";
 
 type ContrarianContentProps = {
     data: { [key: string]: any }; // An object with keys of type string and values of any type
@@ -29,6 +30,8 @@ const getRandomItems = (arr: Trait[], numItems: number): Trait[] => {
 };
 
 const ContrarianContent = ({ data }: ContrarianContentProps) => {
+    const { colorMode, toggleColorMode } = useColorMode();
+    const isLightMode = colorMode === "light";
     if (!data || Object.keys(data).length === 0) {
         return (
             <div className="flex items-center justify-center py-20 h-full text-3xl text-gray-300">
@@ -47,15 +50,13 @@ const ContrarianContent = ({ data }: ContrarianContentProps) => {
         )
     );
 
-    console.log(`mienpv :: ${JSON.stringify(randomAttributes)}`);
-
     return (
         <div className="flex sm:flex-col-reverse flex-row lg:space-x-2 lg:space-y-0 space-y-3 py-20">
             {/* Text Content */}
             <div className="flex-1 w-1/2 py-20 xl:px-0 px-10 ml-40 xl:ml-20 lg:ml-5 md:ml-0 sm:w-full sm:items-center md:py-20 sm:py-0 mt-5 md:space-y-6">
                 {traits.map((item) => (
                     <div key={item.Trait}>
-                        <GradientText text={item?.Description} />
+                        <GradientText text={item?.Description} isLightMode={isLightMode} />
                     </div>
                 ))}
             </div>

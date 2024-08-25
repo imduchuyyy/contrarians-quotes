@@ -1,7 +1,10 @@
 // components/GradientText.tsx
-const GradientText = ({ text }: { text: string }) => {
+const GradientText = ({ text, isLightMode }: { text: string, isLightMode: boolean }) => {
     return (
-        <h1 className="text-2xl lg:text-xl sm:text-title-1s mb-5 font-medium bg-gradient-to-r from-yellow-400 to-green-500 bg-clip-text text-transparent">
+        isLightMode ? <h1 className="mb-5 text-2xl lg:text-xl sm:text-title-1s font-bold md:font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 animate-gradient-text bg-200%">
+            {text}
+        </h1> :
+        <h1 className="mb-5 text-2xl lg:text-xl sm:text-title-1s font-bold md:font-medium text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-yellow-500 to-yellow-500 animate-gradient-text bg-200%">
             {text}
         </h1>
     );

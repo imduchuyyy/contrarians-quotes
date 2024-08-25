@@ -209,6 +209,19 @@ const config: Config = {
                 "gradient-conic":
                     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
             },
+            animation: {
+                'gradient-text': 'gradient-text 5s ease infinite',
+            },
+            keyframes: {
+                'gradient-text': {
+                    '0%, 100%': { backgroundPosition: '0% 50%' },
+                    '50%': { backgroundPosition: '100% 50%' },
+                },
+            },
+            backgroundSize: {
+                '200%': '200%',
+            },
+
         },
     },
     plugins: [
