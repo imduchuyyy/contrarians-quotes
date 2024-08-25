@@ -13,7 +13,7 @@ interface ContrarianPageProps {
 
 const ContrarianPage: React.FC<ContrarianPageProps> = ({ params: { contrarian }, data }) => {
     return (
-        <Layout title={'Test'}>
+        <Layout title={''} visibleBackButton={true}>
             <div className="space-y-2">
                 <ContrarianContent data={data} />
             </div>

@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78e85e49-a707-4f73-873f-0e1a57a7e18b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/GradientText/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GradientText/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/ContrarianPage/ContrarianContent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ContrarianPage/ContrarianContent/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +14,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -25,22 +29,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/mienpv/Documents/mienpv/contrarians-quotes/templates/HomePage",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "/Users/mienpv/Documents/mienpv/contrarians-quotes/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev__core&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mienpv/Documents/mienpv/contrarians-quotes/templates/HomePage&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/mienpv/Documents/mienpv/contrarians-quotes/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/HomePage" />
@@ -64,7 +68,7 @@
       <workItem from="1721709961269" duration="1168000" />
       <workItem from="1721719677234" duration="44000" />
       <workItem from="1722951845015" duration="59000" />
-      <workItem from="1724466009777" duration="13933000" />
+      <workItem from="1724466009777" duration="21892000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <option name="closed" value="true" />
@@ -106,7 +110,71 @@
       <option name="project" value="LOCAL" />
       <updated>1724479423526</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix UI">
+      <option name="closed" value="true" />
+      <created>1724480037396</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724480037396</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix UI">
+      <option name="closed" value="true" />
+      <created>1724502854179</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724502854179</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix UI">
+      <option name="closed" value="true" />
+      <created>1724561589325</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1724561589325</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix responsive">
+      <option name="closed" value="true" />
+      <created>1724562106859</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724562106859</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix bug">
+      <option name="closed" value="true" />
+      <created>1724562888912</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724562888912</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix bug">
+      <option name="closed" value="true" />
+      <created>1724563061647</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724563061647</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix bug">
+      <option name="closed" value="true" />
+      <created>1724563161703</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1724563161703</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix bug">
+      <option name="closed" value="true" />
+      <created>1724564286926</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1724564286926</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,8 +184,9 @@
     <MESSAGE value="first init" />
     <MESSAGE value="add UI" />
     <MESSAGE value="contrarian page" />
-    <MESSAGE value="fix bug" />
     <MESSAGE value="fix UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix UI" />
+    <MESSAGE value="fix responsive" />
+    <MESSAGE value="fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
   </component>
 </project>

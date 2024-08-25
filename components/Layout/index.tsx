@@ -6,9 +6,10 @@ import Header from "@/components/Header";
 type LayoutProps = {
     title: string;
     children: React.ReactNode;
+    visibleBackButton?: boolean;
 };
 
-const Layout = ({ title, children }: LayoutProps) => {
+const Layout = ({ title, children, visibleBackButton }: LayoutProps) => {
     const [visible, setVisible] = useState<boolean>(true);
     const [showMenu, setShowMenu] = useState<boolean>(false);
 
@@ -32,6 +33,7 @@ const Layout = ({ title, children }: LayoutProps) => {
                 <Header
                     visible={visible}
                     title={title}
+                    visibleBackButton={visibleBackButton}
                     onClickBurger={() => setShowMenu(!showMenu)}
                     showMenu={showMenu}
                 />

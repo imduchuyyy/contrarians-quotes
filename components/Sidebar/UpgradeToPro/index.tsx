@@ -30,7 +30,7 @@ const UpgradeToPro = ({}: UpgradeToProProps) => {
             </div>
             <div className="p-6">
                 <div className="mb-2 text-h5 2xl:text-title-1s">
-                    Trade smarter with Contrarians Quotes AI
+                    Trade smarter with Your Contrarian types Quotes AI
                 </div>
                 <div className="-mr-1 text-body-2s text-theme-secondary">
                     Automate trades based on user-defined criteria, using AI

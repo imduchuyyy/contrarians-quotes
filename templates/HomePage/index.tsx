@@ -18,14 +18,14 @@ const HomePage = () => {
     };
 
     return (
-        <Layout title="Dashboard">
+        <Layout title="">
             <div className="space-y-2">
                 {/* <Balance /> */}
                 <Gallery />
             </div>
             <div>
                 <Message
-                    className="flex items-center w-1/3 mt-10 btn-primary mx-auto text-center"
+                    className="flex items-center w-1/3 md:w-1/2 mt-10 sm:w-full btn-primary mx-auto text-center"
                     value={message === null ? "" : message.toString()} // Convert number to string for the value prop
                     onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setMessage(Number(e.target.value) || null)} // Convert input to number or set null
                     onAction={onViewContrarian}
