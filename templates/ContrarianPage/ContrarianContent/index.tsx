@@ -57,7 +57,7 @@ const ContrarianContent = ({ data }: ContrarianContentProps) => {
             <div className="flex-1 w-1/2 py-20 xl:px-0 px-10 ml-40 xl:ml-20 lg:ml-5 md:ml-0 sm:w-full sm:items-center md:py-20 sm:py-0 mt-5 md:space-y-6">
                 {traits.map((item) => (
                     <div key={item.Trait}>
-                        <GradientText text={item?.Description} isLightMode={isLightMode} />
+                        <GradientText text={item?.Description || ''} isLightMode={isLightMode} />
                     </div>
                 ))}
             </div>

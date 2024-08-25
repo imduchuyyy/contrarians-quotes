@@ -1,5 +1,10 @@
 // components/GradientText.tsx
-const GradientText = ({ text, isLightMode }: { text: string, isLightMode: boolean }) => {
+interface GradientTextProps {
+    text: string | null;
+    isLightMode: boolean;
+}
+
+const GradientText: React.FC<GradientTextProps> = ({ text, isLightMode }) => {
     return (
         isLightMode ? <h1 className="mb-5 text-2xl lg:text-xl sm:text-title-1s font-bold md:font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-purple-500 animate-gradient-text bg-200%">
             - {text}
