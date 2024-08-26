@@ -34,7 +34,7 @@ const ContrarianPage: React.FC<ContrarianPageProps> = ({ params: { contrarian } 
     const isLightMode = colorMode === "light";
     return (
         <Layout title={''} visibleBackButton={true}>
-            <div className={`pb-3 pt-3 ${isLightMode ? "bg-white" : "bg-black"}`} id="contrarian-page">
+            <div className={`p-3 ${isLightMode ? "bg-white" : "bg-black"}`} id="contrarian-page">
                 <ContrarianContent data={data} contrarianId={contrarian}/>
             </div>
             <SponsorInformation />
