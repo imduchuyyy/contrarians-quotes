@@ -18,6 +18,16 @@ const SponsorInformation = () => {
           >
             @imduchuyyy
           </a>
+          {" | "}
+          <a
+            href="https://x.com/thiewnngan"
+            target="_blank"
+            className={`${
+              isLightMode ? "text-red-600" : "text-red-200"
+            } italic`}
+          >
+            @thiewnngan
+          </a>
         </div>
         <div className="text-base-1s mb-4 sm:w-full text-center">
           Buy me a coffee:{" "}
