@@ -41,7 +41,7 @@ const ShareButton = ({ traits, contrarianId } : any) => {
                 onClick={shareContent}
                 className={`px-4 flex py-2 font-semibold rounded-lg bg-theme-luxury-brand transition-colors min-h-2`}
             >
-                <div className="flex items-center text-xl font-medium">
+                <div className="flex items-center text-xl font-medium sm:text-sm">
                     Share on X
                 </div>
             </button>
@@ -49,7 +49,7 @@ const ShareButton = ({ traits, contrarianId } : any) => {
                 onClick={downloadImage}
                 className={`px-4 flex py-2 font-semibold rounded-lg bg-theme-luxury-brand transition-colors min-h-2`}
             >
-                <div className="flex items-center text-xl font-medium">
+                <div className="flex items-center text-xl font-medium sm:text-sm">
                     Download
                 </div>
             </button>
