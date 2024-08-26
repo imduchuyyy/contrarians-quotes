@@ -19,7 +19,6 @@ const ShareButton = ({ traits, contrarianId } : any) => {
 
     const downloadImage = () => {
         const node = document.getElementById('contrarian-page');
-        console.log(node?.getHTML())
         if (!node) {
             return;
         }
