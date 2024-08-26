@@ -1,9 +1,20 @@
 // components/ShareButton.tsx
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import Image from "@/components/Image";
-import { toPng } from 'html-to-image';
+import { toPng, toBlob } from 'html-to-image';
+import { useMediaQuery } from 'react-responsive';
+import Modal from "@/components/Modal";
 
 const ShareButton = ({ traits, contrarianId } : any) => {
+    const [showImage, setShowImage] = useState(false);
+    const [image, setImage] = useState('');
+    const isMobile = useMediaQuery({
+        query: "(max-width: 767px)",
+    });
+
+    console.log(isMobile)
+
     const filter = (node: HTMLElement) => {
         const exclusionClasses = ['share-button'];
         return !exclusionClasses.some((classname) => node.classList?.contains(classname));
@@ -24,10 +35,19 @@ const ShareButton = ({ traits, contrarianId } : any) => {
         }
         toPng(node, { cacheBust: true, filter: filter})
             .then((dataUrl) => {
-                const link = document.createElement('a')
-                link.download = 'my-contrarian-type.png'
-                link.href = dataUrl
-                link.click()
+                if (!dataUrl) {
+                    return
+                }
+                if (isMobile) {
+                    setImage(dataUrl);
+                    setShowImage(true);
+                } else {
+                    const link = document.createElement('a')
+                    link.download = 'my-contrarian-type'
+                    link.href = dataUrl
+                    link.click()
+                    link.remove()
+                }
             })
             .catch((err) => {
                 console.log(err)
@@ -53,6 +73,18 @@ const ShareButton = ({ traits, contrarianId } : any) => {
                     Download
                 </div>
             </button>
+            <Modal
+                classWrap="max-w-[40rem] !p-0 rounded-3xl overflow-hidden"
+                visible={isMobile && showImage}
+                onClose={() => setShowImage(false)}
+            >   
+                <div className="text-center mt-4 text-base-1s">
+                    Tab and hold to Save your Contrarian Type
+                </div>
+                <div className='rounded-lg'>
+                    <img src={image} alt="contrarian-type" />
+                </div>
+            </Modal>
         </div>
     );
 };
