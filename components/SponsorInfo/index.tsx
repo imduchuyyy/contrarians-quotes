@@ -20,7 +20,7 @@ const SponsorInformation = () => {
           </a>
         </div>
         <div className="text-base-1s mb-4 sm:w-full text-center">
-          By me a coffee:{" "}
+          Buy me a coffee:{" "}
           <a
             href="https://etherscan.io/address/imduchuyyy.eth"
             target="_blank"
