@@ -26,7 +26,7 @@ const Header = ({ title, visible, visibleBackButton, showMenu, onClickBurger }: 
     return (
         <>
             <div
-                className={`fixed top-0 md:top-4 right-0 z-10 bg-theme-n-8 md:z-30 md:transition-colors left-0 sm:left-3 md:left-5 ${showMenu ? "md:!bg-theme-on-surface-1" : ""}`}
+                className={`top-0 md:top-4 right-0 z-10 bg-theme-n-8 md:z-30 md:transition-colors left-0 sm:left-3 md:left-5 ${showMenu ? "md:!bg-theme-on-surface-1" : ""}`}
             >
                 <div
                     className={`relative flex items-center justify-between h-24 w-full mx-auto px-10 sm:px-0 lg:px-6 md:h-16 md:px-4 md:rounded-2xl md:transition-shadow ${
