@@ -464,7 +464,7 @@ export const contrariansTraits = [
         "Description":"You are a badass contrarian."
     },
     {
-        "Trait":"Cigarette",
+        "Trait":"M.Cigarette",
         "Description":"You are a badass contrarian."
     },
     {

@@ -29,7 +29,7 @@ const interDisplay = localFont({
 
 export const metadata: Metadata = {
     title: "Your Contrarian types",
-    description: "",
+    description: "Contrarians are a unique set of individuals who are not afraid to go against the grain.",
 };
 
 export default function RootLayout({
@@ -60,7 +60,7 @@ export default function RootLayout({
                 />
                 <meta
                     name="twitter:description"
-                    content="Clean and minimal Crypto AI UI Design Kit"
+                    content="Your Contrarian types"
                 />
                 <meta name="twitter:creator" content="@ui8" />
                 {/* Twitter Summary card images must be at least 120x120px */}

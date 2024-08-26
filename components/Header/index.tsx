@@ -50,7 +50,7 @@ const Header = ({ title, visible, visibleBackButton, showMenu, onClickBurger }: 
                     ) : null}
 
                     <div className="absolute left-1/2 transform -translate-x-1/2 text-h3 sm:text-xl md:text-2xl md:text-h4 sm:text-h5 text-center font-bold">
-                        Your Contrarian types
+                        Your Contrarian Type
                     </div>
 
                     <button

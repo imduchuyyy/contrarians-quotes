@@ -1,24 +1,22 @@
 // components/ShareButton.tsx
 import React from 'react';
-import Icon from "@/components/Icon";
 import Image from "@/components/Image";
+import { useColorMode } from '@chakra-ui/react';
 
-const ShareButton = () => {
+const ShareButton = ({ traits, contrarianId } : any) => {
     const shareContent = () => {
-        const text = encodeURIComponent("My Contrarian types!");
-        const url = encodeURIComponent(window.location.href);
-        const hashtags = encodeURIComponent("contract,quotes");
-        const via = "https://dagora.xyz/collection/viction/0x09201E7A42f548Dc56D7e61d8De3A3EDf2AaBAc5"
-
+        const text = encodeURIComponent(`My Contrarian types!\n - ${traits[0].Description}\n - ${traits[1].Description}\n - ${traits[2].Description}\n Try it out yourself at ${window.location.origin}!
+        `);
+        const url = encodeURIComponent(`https://dagora.xyz/detail/viction/0x09201E7A42f548Dc56D7e61d8De3A3EDf2AaBAc5/${contrarianId}`);
+        const hashtags = encodeURIComponent("contrarians,quotes");
         const shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}&hashtags=${hashtags}`;
-
         window.open(shareUrl, '_blank');
     };
 
     return (
         <button
             onClick={shareContent}
-            className="px-4 flex py-2 font-semibold text-white rounded-lg hover:bg-theme-luxury-brand transition-colors"
+            className={`px-4 flex py-2 font-semibold rounded-lg hover:bg-theme-luxury-brand transition-colors`}
         >
             <Image
                 className="opacity-100"
